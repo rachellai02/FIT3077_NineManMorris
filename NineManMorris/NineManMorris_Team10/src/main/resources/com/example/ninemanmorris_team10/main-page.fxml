@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane opacity="0.95" prefHeight="565.0" prefWidth="695.0" styleClass="bodybg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ninemanmorris_team10.Controller.MainPageController">
+   <children>
+      <Label alignment="CENTER" layoutX="137.0" layoutY="160.0" prefHeight="54.0" prefWidth="422.0" text="Nine Men's Morris Game" textFill="WHITE">
+         <font>
+            <Font name="Gill Sans MT" size="40.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" spread="0.33" />
+         </effect>
+      </Label>
+      <Button fx:id="newgame_btn" layoutX="268.0" layoutY="295.0" mnemonicParsing="false" onAction="#chooseGameMode" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: white;" text="New Game">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect>
+      </Button>
+
+      <Button fx:id="loadGame_btn" layoutX="268.0" layoutY="380.0" mnemonicParsing="false" onAction="#chooseFile" prefHeight="54.0" prefWidth="159.0" style="-fx-background-color: white;" text="Load Game">
+         <font>
+            <Font name="Gill Sans MT" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="5.0" offsetY="5.0" />
+         </effect>
+      </Button>
+
+      <DialogPane fx:id="gameModePopup" layoutX="181.0" layoutY="179.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="211.0" prefWidth="337.0" visible="false">
+         <header>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="217.0" prefWidth="320.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-width: 1; -fx-border-color: black; -fx-opacity: 40;">
+               <children>
+                  <Label alignment="CENTER" layoutX="41.0" layoutY="45.0" prefHeight="54.0" prefWidth="263.0" text="Choose a game mode." wrapText="true">
+                     <font>
+                        <Font name="Gill Sans MT" size="25.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="computerPlayer" layoutX="90.0" layoutY="158.0" mnemonicParsing="false" onAction="#computerMode" prefHeight="30.0" prefWidth="143.0" style="-fx-background-color: black;" text="Computer Player" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="humanPlayer" layoutX="90.0" layoutY="111.0" mnemonicParsing="false" onAction="#humanMode" prefHeight="30.0" prefWidth="144.0" style="-fx-background-color: black;" text="Human Player" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="288.0" layoutY="12.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#quitSelectGameMode" style="-fx-background-radius: 30; -fx-background-color: white;" text="X">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </header>
+      </DialogPane>
+
+      <DialogPane fx:id="filePopup" layoutX="200.0" layoutY="240.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="300.0" visible="false">
+         <header>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="320.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-width: 1; -fx-border-color: black; -fx-opacity: 40;">
+               <children>
+                  <Label alignment="CENTER" layoutX="4.0" layoutY="9.0" prefHeight="82.0" prefWidth="290.0" text="Invalid file." wrapText="true">
+                     <font>
+                        <Font name="Gill Sans MT" size="25.0" />
+                     </font>
+                  </Label>
+
+                  <Button layoutX="240.0" layoutY="10" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#quitFileUpload" prefHeight="44.0" prefWidth="51.0" style="-fx-background-radius: 30; -fx-background-color: white;" text="X">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </header>
+      </DialogPane>
+
+   </children>
+</AnchorPane>

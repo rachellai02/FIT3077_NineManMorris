@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.95" prefHeight="565.0" prefWidth="695.0" styleClass="bodybg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ninemanmorris_team10.Controller.GameController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbb68c" height="392.0" layoutX="151.0" layoutY="96.0" stroke="TRANSPARENT" strokeType="INSIDE" width="391.0">
+            <effect>
+                <DropShadow offsetX="5.0" offsetY="5.0" />
+            </effect></Rectangle>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fff6dc" height="359.0" layoutX="169.0" layoutY="112.0" smooth="false" stroke="#d9b38b00" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="15.0" width="357.0">
+            <effect>
+                <DropShadow />
+            </effect></Rectangle>
+
+        <Line endX="300.3333435058594" layoutX="198.0" layoutY="140.0" startX="-7.62939453125E-6" stroke="BLACK"/>
+        <Line endX="-10.000007629394531" endY="289.6666564941406" layoutX="208.0" layoutY="150.0" startX="-10.000007629394531" startY="-10.0" stroke="BLACK" />
+        <Line endX="326.0" layoutX="172.0" layoutY="440.0" startX="25.49999237060547" stroke="BLACK" />
+        <Line endX="239.33334350585938" endY="40.0" layoutX="208.0" layoutY="150.0" startX="40.00001525878906" startY="40.0" stroke="BLACK"/>
+        <Line endX="40.00001525878906" endY="238.33334350585938" layoutX="208.0" layoutY="150.0" startX="40.00001525878906" startY="40.0" stroke="BLACK" />
+        <Line endX="90.88888549804688" endY="139.5" layoutX="208.0" layoutY="150.0" startX="-10.500022888183594" startY="139.5" stroke="BLACK"/>
+        <Line endX="139.99998474121094" endY="-9.499992370605469" layoutX="208.0" layoutY="150.0" startX="140.00001525878906" startY="89.5" stroke="BLACK"/>
+        <Line endX="290.5" endY="290.0" layoutX="208.0" layoutY="150.0" startX="290.5" startY="-10.0" stroke="BLACK"/>
+        <Line endX="240.0" endY="40.0" layoutX="208.0" layoutY="150.0" startX="240.0" startY="239.33331298828125" stroke="BLACK"/>
+        <Line endX="215.0" layoutX="233.0" layoutY="390.0" startX="15.000015258789062" stroke="BLACK"/>
+        <Line endX="190.0" endY="90.0" layoutX="208.0" layoutY="150.0" startX="90.00001525878906" startY="90.0" stroke="BLACK"/>
+        <Line endX="90.00001525878906" endY="190.0" layoutX="208.0" layoutY="150.0" startX="89.50001525878906" startY="90.0" stroke="BLACK"/>
+        <Line endX="190.0" endY="190.0" layoutX="208.0" layoutY="150.0" startX="90.70712280273438" startY="190.70709228515625" stroke="BLACK"/>
+        <Line endX="190.5" endY="90.5" layoutX="208.0" layoutY="150.0" startX="190.0" startY="190.0" stroke="BLACK"/>
+        <Line endX="289.29290771484375" endY="140.70709228515625" layoutX="208.0" layoutY="150.0" startX="189.29290771484375" startY="140.25" stroke="BLACK"/>
+        <Line endX="140.50001525878906" endY="290.5" layoutX="208.0" layoutY="150.0" startX="140.3535614013672" startY="189.29290771484375" stroke="BLACK"/>
+
+        <Circle fx:id="circle0" fill="#808080" layoutX="198.0" layoutY="140.0" onMouseClicked="#positionClicked" radius="9.0"/>
+        <Circle fx:id="token0" fill="#101a24" layoutX="198.0" layoutY="140.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle9" fill="#808080" layoutX="198.0" layoutY="290.0" onMouseClicked="#positionClicked" radius="9.0"/>
+        <Circle fx:id="token9" fill="#101a24" layoutX="198.0" layoutY="290.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle21" fill="#808080" layoutX="198.0" layoutY="440.0" onMouseClicked="#positionClicked" radius="9.0"/>
+        <Circle fx:id="token21" fill="#101a24" layoutX="198.0" layoutY="440.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle1" fill="#808080" layoutX="348.0" layoutY="140.0" onMouseClicked="#positionClicked" radius="9.0"/>
+        <Circle fx:id="token1" fill="#101a24" layoutX="348.0" layoutY="140.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle2" fill="#808080" layoutX="498.0" layoutY="140.0" onMouseClicked="#positionClicked" radius="9.0"/>
+        <Circle fx:id="token2" fill="#101a24" layoutX="498.0" layoutY="140.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle14" fill="#808080" layoutX="498.0" layoutY="290.0" onMouseClicked="#positionClicked" radius="9.0"/>
+        <Circle fx:id="token14" fill="#101a24" layoutX="498.0" layoutY="290.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle23" fill="#808080" layoutX="498.0" layoutY="440.0" onMouseClicked="#positionClicked" radius="9.0"/>
+        <Circle fx:id="token23" fill="#101a24" layoutX="498.0" layoutY="440.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle22" fill="#808080" layoutX="348.0" layoutY="440.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token22" fill="#101a24" layoutX="348.0" layoutY="440.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle4" fill="#808080" layoutX="348.0" layoutY="190.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token4" fill="#101a24" layoutX="348.0" layoutY="190.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle7" fill="#808080" layoutX="348.0" layoutY="240.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token7" fill="#101a24" layoutX="348.0" layoutY="240.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle3" fill="#808080" layoutX="248.0" layoutY="190.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token3" fill="#101a24" layoutX="248.0" layoutY="190.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle5" fill="#808080" layoutX="448.0" layoutY="190.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token5" fill="#101a24" layoutX="448.0" layoutY="190.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle6" fill="#808080" layoutX="298.0" layoutY="240.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token6" fill="#101a24" layoutX="298.0" layoutY="240.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle8" fill="#808080" layoutX="398.0" layoutY="240.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token8" fill="#101a24" layoutX="398.0" layoutY="240.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle10" fill="#808080" layoutX="248.0" layoutY="290.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token10" fill="#101a24" layoutX="248.0" layoutY="290.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle18" fill="#808080" layoutX="248.0" layoutY="390.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token18" fill="#101a24" layoutX="248.0" layoutY="390.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+        <Circle fx:id="circle11" fill="#808080" layoutX="298.0" layoutY="290.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token11" fill="#101a24" layoutX="298.0" layoutY="290.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle15" fill="#808080" layoutX="298.0" layoutY="340.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token15" fill="#101a24" layoutX="298.0" layoutY="340.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle13" fill="#808080" layoutX="448.0" layoutY="290.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token13" fill="#101a24" layoutX="448.0" layoutY="290.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle20" fill="#808080" layoutX="448.0" layoutY="390.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token20" fill="#101a24" layoutX="448.0" layoutY="390.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle19" fill="#808080" layoutX="348.0" layoutY="390.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token19" fill="#101a24" layoutX="348.0" layoutY="390.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle16" fill="#808080" layoutX="348.0" layoutY="340.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token16" fill="#101a24" layoutX="348.0" layoutY="340.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle17" fill="#808080" layoutX="398.0" layoutY="340.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token17" fill="#101a24" layoutX="398.0" layoutY="340.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Circle fx:id="circle12" fill="#808080" layoutX="398.0" layoutY="290.0" onMouseClicked="#positionClicked" radius="9.0" />
+        <Circle fx:id="token12" fill="#101a24" layoutX="398.0" layoutY="290.0" onMouseClicked="#tokenClicked" radius="15.0" visible="false" />
+
+        <Label fx:id="playersTurn" alignment="CENTER" layoutX="259.0" layoutY="51.0" prefHeight="37.0" prefWidth="175.0" text="Player 1's turn" textFill="WHITE">
+
+            <font>
+                <Font name="Gill Sans MT" size="20.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="Player1_Label" alignment="CENTER" layoutX="51.0" layoutY="347.0" prefHeight="34.0" prefWidth="61.0" text="Player 1" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Gill Sans MT" size="16.0" />
+            </font></Label>
+        <Label fx:id="Player2_Label" alignment="CENTER" layoutX="580.0" layoutY="347.0" prefHeight="31.0" prefWidth="68.0" text="Player 2" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Gill Sans MT" size="16.0" />
+            </font></Label>
+        <Label fx:id="Player1_NumPiecesOnBoard" alignment="CENTER" layoutX="57.0" layoutY="388.0" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: green; -fx-background-color: ffffff; -fx-border-width: 2;" text="0">
+            <font>
+                <Font name="Gill Sans MT" size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="Player2_NumPiecesOnBoard" alignment="CENTER" layoutX="589.0" layoutY="388.0" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: ffffff; -fx-background-color: ffffff; -fx-border-width: 2;" text="0">
+            <font>
+                <Font name="Gill Sans MT" size="25.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="26.0" layoutY="451.0" text="tokens on board" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Gill Sans MT" size="16.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="560.0" layoutY="451.0" text="tokens on board" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Gill Sans MT" size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="movesLabel" alignment="TOP_CENTER" layoutX="18.0" layoutY="497.0" prefHeight="54.0" prefWidth="660.0" text="Please place a token." textAlignment="CENTER" textFill="WHITE" wrapText="true">
+
+            <font>
+                <Font name="Gill Sans MT" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="647.0" layoutY="27.0" text="X" textFill="WHITE">
+
+            <font>
+                <Font name="Segoe UI" size="20.0" />
+            </font>
+        </Label>
+
+        <Circle fx:id="quitBtn" fill="#ffffff61" layoutX="653.0" layoutY="38.0" onMouseClicked="#quitBtnClicked" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+        <DialogPane fx:id="alertPopup" layoutX="224.0" layoutY="224.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="135.0" prefWidth="251.0" visible="false">
+            <header>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="137.0" prefWidth="249.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-color: black; -fx-opacity: 40;">
+                    <children>
+                        <Label fx:id="alertText" alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="23.0" prefHeight="67.0" prefWidth="226.0" text="Label" textAlignment="CENTER" wrapText="true">
+                            <font>
+                                <Font name="Gill Sans MT" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="alertOkBtn" layoutX="80.0" layoutY="90.0" mnemonicParsing="false" onAction="#resumeGame" prefHeight="23.0" prefWidth="93.0" style="-fx-background-color: black;" text="OK ( 3s)" textFill="WHITE">
+                            <font>
+                                <Font name="Gill Sans MT" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </header>
+        </DialogPane>
+
+        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#fff6dc" height="135.0" layoutX="56.0" layoutY="166.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" width="52.0">
+            <effect>
+                <DropShadow offsetX="5.0" offsetY="5.0" />
+            </effect></Rectangle>
+        <Circle fx:id="p1sideToken9" fill="WHITE" layoutX="82.0" layoutY="274.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Circle fx:id="p1sideToken8" fill="WHITE" layoutX="82.0" layoutY="264.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Circle fx:id="p1sideToken7" fill="WHITE" layoutX="82.0" layoutY="254.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Circle fx:id="p1sideToken6" fill="WHITE" layoutX="82.0" layoutY="244.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Circle fx:id="p1sideToken5" fill="WHITE" layoutX="82.0" layoutY="234.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Circle fx:id="p1sideToken4" fill="WHITE" layoutX="82.0" layoutY="224.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Circle fx:id="p1sideToken3" fill="WHITE" layoutX="82.0" layoutY="214.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Circle fx:id="p1sideToken2" fill="WHITE" layoutX="82.0" layoutY="204.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Circle fx:id="p1sideToken1" fill="WHITE" layoutX="82.0" layoutY="194.0" radius="15.0" stroke="BLACK" strokeType="OUTSIDE" />
+        <Rectangle arcHeight="15.0" arcWidth="15.0" fill="#fff6dc" height="135.0" layoutX="588.0" layoutY="166.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="2.0" width="52.0">
+            <effect>
+                <DropShadow offsetX="5.0" offsetY="5.0" />
+            </effect></Rectangle>
+        <Circle fx:id="p2sideToken9" layoutX="614.0" layoutY="274.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <Circle fx:id="p2sideToken8" layoutX="614.0" layoutY="264.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <Circle fx:id="p2sideToken7" layoutX="614.0" layoutY="254.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <Circle fx:id="p2sideToken6" layoutX="614.0" layoutY="244.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <Circle fx:id="p2sideToken5" layoutX="614.0" layoutY="234.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <Circle fx:id="p2sideToken4" layoutX="614.0" layoutY="224.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <Circle fx:id="p2sideToken3" layoutX="614.0" layoutY="214.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <Circle fx:id="p2sideToken2" layoutX="614.0" layoutY="204.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <Circle fx:id="p2sideToken1" layoutX="614.0" layoutY="194.0" radius="15.0" stroke="WHITE" strokeType="OUTSIDE" />
+        <DialogPane fx:id="confirmationPopup" layoutX="210.0" layoutY="209.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="274.0" visible="false">
+            <header>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="163.0" prefWidth="258.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-width: 1; -fx-border-color: black; -fx-opacity: 40;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="20.0" layoutY="37.0" prefHeight="54.0" prefWidth="234.0" text="Are you sure to quit game?" wrapText="true">
+                            <font>
+                                <Font name="Gill Sans MT" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="156.0" layoutY="100.0" mnemonicParsing="false" onAction="#notQuitGame" prefHeight="23.0" prefWidth="87.0" style="-fx-background-color: black;" text="No" textFill="WHITE">
+                            <font>
+                                <Font name="Gill Sans MT" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="28.0" layoutY="100.0" mnemonicParsing="false" onAction="#confirmQuitGame" prefHeight="23.0" prefWidth="92.0" style="-fx-background-color: black;" text="Yes" textFill="WHITE">
+                            <font>
+                                <Font name="Gill Sans MT" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </header>
+        </DialogPane>
+        <DialogPane fx:id="resultPopup" layoutX="219.0" layoutY="200.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="182.0" prefWidth="263.0" visible="false">
+            <header>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="204.0" prefWidth="263.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-width: 1; -fx-border-color: black; -fx-opacity: 40;">
+                    <children>
+                        <Label fx:id="winner" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="30.0" layoutY="60.0" prefHeight="24.0" prefWidth="68.0" text="Player 1" textAlignment="RIGHT">
+                            <font>
+                                <Font name="Gill Sans MT" size="20.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="116.0" layoutY="59.0" prefHeight="24.0" prefWidth="120.0" text="is the winner !">
+                            <font>
+                                <Font name="Gill Sans MT" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="backBtn" layoutX="152.0" layoutY="142.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="23.0" prefWidth="76.0" style="-fx-background-color: black;" text="Quit game" textFill="WHITE">
+                            <font>
+                                <Font name="Gill Sans MT" size="13.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="56.0" layoutY="93.0" prefHeight="24.0" prefWidth="151.0" text="Congratulations ! ">
+                            <font>
+                                <Font name="Gill Sans MT" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="startBtn" layoutX="41.0" layoutY="142.0" mnemonicParsing="false" onAction="#startGame" prefHeight="23.0" prefWidth="76.0" style="-fx-background-color: black;" text="New game" textFill="WHITE">
+                            <font>
+                                <Font name="Gill Sans MT" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </header></DialogPane>
+        <DialogPane fx:id="saveGamePopup" layoutX="212.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="274.0" visible="false">
+            <header>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="163.0" prefWidth="258.0" style="-fx-background-color: white; -fx-border-style: solid; -fx-border-width: 1; -fx-border-color: black; -fx-opacity: 40;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="20.0" layoutY="37.0" prefHeight="54.0" prefWidth="234.0" text="Do you want to save game?" wrapText="true">
+                            <font>
+                                <Font name="Gill Sans MT" size="20.0" />
+                            </font>
+                        </Label>
+                        <Button layoutX="156.0" layoutY="100.0" mnemonicParsing="false" onAction="#quitGame" prefHeight="23.0" prefWidth="87.0" style="-fx-background-color: black;" text="Don't save" textFill="WHITE">
+                            <font>
+                                <Font name="Gill Sans MT" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button layoutX="28.0" layoutY="100.0" mnemonicParsing="false" onAction="#saveAndQuitGame" prefHeight="23.0" prefWidth="92.0" style="-fx-background-color: black;" text="Save Game" textFill="WHITE">
+                            <font>
+                                <Font name="Gill Sans MT" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </header>
+        </DialogPane>
+        <Line endX="78.75" endY="48.650001525878906" layoutX="455.0" layoutY="-10.0" startX="61.3499755859375" startY="48.650001525878906" stroke="WHITE" strokeMiterLimit="0.0" strokeWidth="1.2" />
+        <Line endX="58.5" endY="45.5" layoutX="465.0" startX="50.29289245605469" startY="38.70710754394531" stroke="WHITE" strokeLineCap="ROUND" strokeMiterLimit="0.0" strokeWidth="1.2" />
+        <Line endX="-12.5" endY="-8.0" layoutX="536.0" layoutY="39.0" startX="-19.75" startY="-0.8928909301757812" stroke="WHITE" strokeLineCap="ROUND" strokeMiterLimit="0.0" strokeWidth="1.2" />
+        <Line endX="61.5" endY="29.25" layoutX="529.0" layoutY="-3.0" startX="61.5" startY="48.5" stroke="WHITE" strokeWidth="1.3" />
+        <Line endX="57.0" endY="30.0" layoutX="541.0" layoutY="7.0" startX="50.29289245605469" startY="38.70710754394531" stroke="WHITE" strokeWidth="1.3" />
+        <Line endX="-7.1500244140625" endY="-2.8499984741210938" layoutX="598.0" layoutY="49.0" startX="-14.75" startY="-10.75" stroke="WHITE" strokeWidth="1.3" />
+        <Line endX="78.75" endY="48.650001525878906" layoutX="521.0" layoutY="-2.0" startX="61.3499755859375" startY="48.650001525878906" stroke="WHITE" strokeMiterLimit="0.0" strokeWidth="1.2" />
+        <Circle fx:id="saveBtn" fill="#ffffff61" layoutX="591.0" layoutY="38.0" onMouseClicked="#saveBtnClicked" radius="20.0" stroke="WHITE" strokeType="INSIDE" styleClass="save_icon" />
+        <Circle fx:id="undoBtn" fill="#ffffff61" layoutX="525.0" layoutY="38.0" onMouseClicked="#undoBtnClicked" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+
+    </children>
+</AnchorPane>
